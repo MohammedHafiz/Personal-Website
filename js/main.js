@@ -302,12 +302,6 @@ function validateName(){
 		$('#username').html("Do not enter space as first character")
 		return false
 	}
-	// else if((namevalue.length < 3)|| (namevalue.length > 10))
-	// {
-	//      $('#username').html("**length of username must be between 3 and 10");
-	//      return false;
-	
-	// }
 	else if(namevalue.match(letters)){
 		$('#username').html("")
 		return true
