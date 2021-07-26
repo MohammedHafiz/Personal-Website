@@ -298,19 +298,19 @@ function validateName(){
 		$("#username").html("Required field")
 		return false
 	}
-	else if(namevalue==" "){
-		$('#username').html("Do not enter space as first character")
-		return false
-	}
-	else if(namevalue.match(letters)){
+	// else if(namevalue==" "){
+	// 	$('#username').html("Do not enter space as first character")
+	// 	return false
+	// }
+	else{
 		$('#username').html("")
 		return true
 	}
-	else{
-		$('#username').html("Please enter a valid name")
-		return false
-	}
-	}
+	// else{
+	// 	$('#username').html("Please enter a valid name")
+	// 	return false
+	// }
+}
 
 //emailvalidation
 function validateEmail(){
@@ -321,10 +321,10 @@ function validateEmail(){
 		$('#useremail').html("Required field")
 		return false
 	} 
-	else if(emailvalue==" "){
-		$('#useremail').html("Donot enter space in this field")
-		return false
-	}
+	// else if(emailvalue==" "){
+	// 	$('#useremail').html("Donot enter space in this field")
+	// 	return false
+	// }
 	else if(emailvalue.match(mail)){
 		$('#useremail').html("")
 		return true
